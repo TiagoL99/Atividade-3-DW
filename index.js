@@ -1,4 +1,4 @@
-const PORTA =  8050
+const PORTA =  8050                                          // http://localhost:8050 para aceder ao contéudo
 const express = require('express')
 const axios = require('axios')
 const cheerio = require('cheerio')
@@ -8,32 +8,32 @@ const app = express()
 
 const sites = [
     {
-        name: 'Variety',
+        name: 'Variety',                                               //http://localhost:8050/boxoffice/Variety para aceder apenas ao conteudo deste site
         address: 'https://variety.com/v/film/box-office/',
         base: '',
     },
 
     {
-        name: 'Hollywood Reporter',
+        name: 'Hollywood Reporter',                                   //http://localhost:8050/boxoffice/Hollywood%20Reporter para aceder apenas ao conteudo deste site
         address: 'https://www.hollywoodreporter.com/t/box-office/',
         base: '',
     },
         
     {
-        name: 'Deadline',
+        name: 'Deadline',                                            //http://localhost:8050/boxoffice/Deadline para aceder apenas ao conteudo deste site
         address: 'https://deadline.com/v/box-office/',
         base: '',
     },
         
 
     {
-        name: 'The Numbers',
+        name: 'The Numbers',                                         //http://localhost:8050/boxoffice/The%20Numbers para aceder apenas ao conteudo deste site
         address: 'https://www.the-numbers.com/news/',
         base: 'https://www.the-numbers.com',
     },
 
     {
-        name: 'Box Office Pro',
+        name: 'Box Office Pro',                                                    //http://localhost:8050/boxoffice/Box%20Office%20Pro para aceder apenas ao conteudo deste site
         address: 'https://www.boxofficepro.com/category/forecasts-tracking/',
         base: '',
     }
